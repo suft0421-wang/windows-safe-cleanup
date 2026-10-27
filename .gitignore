@@ -1,0 +1,27 @@
+# Runtime reports, logs, local configuration and private data
+runs/
+vm-backup-staging/
+*.local.json
+*session.log
+*error.txt
+*result*.json
+*summary*.json
+*manifest*.json
+vm-removal-preview.json
+*.7z
+*.zip
+*.tar
+*.gz
+*.iso
+*.vmdk
+*.vhd
+*.vhdx
+*.vdi
+*.vmem
+*.vmss
+*.vmsn
+*.nvram
+.env
+.env.*
+*.pem
+*.key

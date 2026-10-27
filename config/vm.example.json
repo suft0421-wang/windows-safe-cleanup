@@ -1,0 +1,29 @@
+{
+  "Enabled": false,
+  "BackupDirectory": "D:\\VMBackups",
+  "SevenZipPath": "",
+  "CompressionLevel": 1,
+  "VMware": [
+    {
+      "Name": "worker-a",
+      "Root": "D:\\VMs\\worker-a",
+      "Descriptor": "D:\\VMs\\worker-a\\worker-a.vmdk",
+      "Config": "D:\\VMs\\worker-a\\worker-a.vmx"
+    },
+    {
+      "Name": "worker-b",
+      "Root": "D:\\VMs\\worker-b",
+      "Descriptor": "D:\\VMs\\worker-b\\worker-b.vmdk",
+      "Config": "D:\\VMs\\worker-b\\worker-b.vmx"
+    },
+    {
+      "Name": "main",
+      "Root": "D:\\VMs\\main",
+      "Descriptor": "D:\\VMs\\main\\main.vmdk",
+      "Config": "D:\\VMs\\main\\main.vmx"
+    }
+  ],
+  "WSL": {
+    "DistributionName": "Ubuntu"
+  }
+}

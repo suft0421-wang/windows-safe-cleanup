@@ -1,0 +1,16 @@
+name: PowerShell safety tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: windows-2025
+    strategy:
+      fail-fast: false
+      matrix:
+        shell: [powershell, pwsh]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run disposable fixture tests
+        shell: ${{ matrix.shell }}
+        run: .\tests\Run-Tests.ps1 -SevenZipPath 'C:\Program Files\7-Zip\7z.exe'
